@@ -27,13 +27,17 @@ MergeSort is implementation of divide-and-conquer. To sort whole numbers, we div
  ## Lisp syntax
  
  ### ceiling:
-`(middle (ceiling (length sequence) 2)
-;number &optional divisor => quotient, remainder`
+ ```Lisp
+ (middle (ceiling (length sequence) 2)
+;number &optional divisor => quotient, remainder
+```
 quotient: the smallest mathematical integer that is not smaller than the mathematical result
   ex: (ceiling 5 2) => 3
  ### merge
- `(merge 'list odd-zs even-zs #'<)
- ;merge result-type sequence-1 sequence-2 predicate &key key => result-sequence`
+  ```Lisp
+  (merge 'list odd-zs even-zs #'<)
+ ;merge result-type sequence-1 sequence-2 predicate &key key => result-sequence
+ ```
  * sequence-1, sequence: sequence to be merged
  * key: < or > -> ascending order or decensing order
  
@@ -42,7 +46,6 @@ quotient: the smallest mathematical integer that is not smaller than the mathema
  (destructuring-bind (odd-zs  even-zs) 
          (list (mergesort (car(split Line))) (mergesort (cadr(split Line))))
             (merge 'list odd-zs even-zs #'<))
-
 ;destructuring-bind lambda-list expression declaration* form* > result*
 ```
 * lamda-list: list to be assign
