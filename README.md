@@ -2,7 +2,7 @@
 
 ## Enviroment:SBCL 1.1.4.0.mswin.1288-90ab477
 (Download at: [https://github.com/akovalenko/sbcl-win32-threads/wiki](https://github.com/akovalenko/sbcl-win32-threads/wiki) 
-  choose  [sbcl-1.1.4.0.mswin.1288-90ab477-x86-64.msi](https://github.com/akovalenko/sbcl-win32-threads/wiki))
+choose  [sbcl-1.1.4.0.mswin.1288-90ab477-x86-64.msi](https://github.com/akovalenko/sbcl-win32-threads/wiki))
 ## Running step:
 1.	Open 命令提示字元 in Windows OS
 2.	Find target file
@@ -23,3 +23,9 @@ MergeSort is implementation of divide-and-conquer. To sort whole numbers, we div
   ### 2.	Split
   (1)	Assign “middle” = length of sequence / 2
   (2)	Return list( list(0 : middle) list(middle + 1 : end))
+ 
+ ## Lisp syntax
+ ### ceiling:
+`number &optional divisor => quotient, remainder
+ ### destructuring-bind
+ ### merge
