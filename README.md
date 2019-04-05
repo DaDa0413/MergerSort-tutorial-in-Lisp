@@ -41,7 +41,8 @@ quotient: the smallest mathematical integer that is not smaller than the mathema
  `(destructuring-bind (odd-zs  even-zs) 
          (list (mergesort (car(split Line))) (mergesort (cadr(split Line))))
             (merge 'list odd-zs even-zs #'<))`
- `;destructuring-bind lambda-list expression declaration* form* > result*`
+
+`;destructuring-bind lambda-list expression declaration* form* > result*`
 * lamda-list: list to be assign
 * expression: evaluated value
 * form:return format
