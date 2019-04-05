@@ -25,7 +25,24 @@ MergeSort is implementation of divide-and-conquer. To sort whole numbers, we div
   (2)	Return list( list(0 : middle) list(middle + 1 : end))
  
  ## Lisp syntax
+ 
  ### ceiling:
-`number &optional divisor => quotient, remainder`
- ### destructuring-bind
+`(middle (ceiling (length sequence) 2)
+;number &optional divisor => quotient, remainder`
+quotient: the smallest mathematical integer that is not smaller than the mathematical result
+  ex: (ceiling 5 2) => 3
  ### merge
+ `(merge 'list odd-zs even-zs #'<)
+ ;merge result-type sequence-1 sequence-2 predicate &key key => result-sequence`
+ * sequence-1, sequence: sequence to be merged
+ * key: < or > -> ascending order or decensing order
+ 
+ ### destructuring-bind
+ `(destructuring-bind (odd-zs  even-zs) 
+         (list (mergesort (car(split Line))) (mergesort (cadr(split Line))))
+            (merge 'list odd-zs even-zs #'<))
+ ;destructuring-bind lambda-list expression declaration* form* > result*`
+* lamda-list: list to be assign
+* expression: evaluated value
+* form:return format
+
