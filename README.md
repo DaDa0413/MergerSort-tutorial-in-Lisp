@@ -26,6 +26,13 @@ MergeSort is implementation of divide-and-conquer. To sort whole numbers, we div
  
  ## Lisp syntax
  
+ ### subsequence:
+  ```Lisp
+  (subseq sequence 0 middle)
+  ;subseq sequence start &optional end => subsequence
+  ```
+  * start: start index
+  * end: end index(default: 1)
  ### ceiling:
  ```Lisp
  (middle (ceiling (length sequence) 2)
